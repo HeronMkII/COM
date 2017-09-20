@@ -5,7 +5,7 @@ MCU = m32m1
 PORT = /dev/tty.usbmodem00187462
 
 INCLUDES = -I./lib-common/include/
-LIB = -L./lib-common/lib/ -lspi -luart -lcan
+LIB = -L./lib-common/lib/ -lspi -luart -lcan -ltimer
 
 SRC = $(wildcard ./src/*.c)
 OBJ = $(SRC:./src%.c=./build%.o)
